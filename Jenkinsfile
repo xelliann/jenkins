@@ -1,5 +1,3 @@
-groovy
-Copy code
 pipeline {
     agent any
     stages {

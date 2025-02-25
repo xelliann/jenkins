@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+    stages {
+        stage('Job A') {
+            steps {
+                echo 'Executing Job A...'
+                sh 'sleep 3'  // Simulating Job A execution
+            }
+        }
+        stage('Job B') {
+            steps {
+                echo 'Executing Job B...'
+                sh 'sleep 3'  // Simulating Job B execution
+            }
+        }
+        stage('Job C') {
+            steps {
+                echo 'Executing Job C...'
+                sh 'sleep 3'  // Simulating Job C execution
+            }
+        }
+    }
+}
